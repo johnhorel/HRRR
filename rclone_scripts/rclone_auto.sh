@@ -18,4 +18,14 @@ secret_access_key = tmRYCMKhEeGAiIIE1LctLtAOroQuyXj5YM7UQh9u
 #region = other-v2-signature
 endpoint = https://pando-rgw01.chpc.utah.edu
 location_constraint =
+
+[AWS test]
+type = s3
+provider = AWS
+env_auth = false
+access_key_id = AKIATQDTW4IE46UH6NFD
+secret_access_key = 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
+region = us-west-2
 EOF
+# Load the module
+module load rclone
